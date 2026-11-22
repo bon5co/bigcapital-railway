@@ -19,6 +19,7 @@ ENV DB_CHARSET=utf8 \
     CLICKHOUSE_ENABLED=false \
     AI_ASSISTANT_ENABLED=false \
     S3_BUCKET=bigcapital \
+    DB_USER=root \
     EXCHANGE_RATE_SERVICE=open-exchange-rate
 
 COPY --from=webapp --chown=nodejs:nodejs /usr/share/nginx/html /app/webapp
